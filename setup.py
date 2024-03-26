@@ -2,11 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='uuid_shortener',
-    version='0.1.0',
+    version='0.1.1',
     description='A utility to shorten UUIDs using base62 encoding.',
-    author='Your Name',
-    author_email='your.email@example.com',
-    packages=find_packages(),
+    author='Sammeow Chan',
+    author_email='1010hk@gmail.com',
+    url='https://github.com/sammeowww/py_uuid_shortener',  # Git repository URL
+    package_dir={'': 'src'},
+    packages=find_packages(where='src'),
     install_requires=[],
     license='MIT',
     classifiers=[
@@ -19,6 +21,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',  # Added Python 3.12 support
     ],
     keywords='uuid shortener base62',
 )
